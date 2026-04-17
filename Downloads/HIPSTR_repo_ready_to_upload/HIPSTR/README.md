@@ -93,42 +93,7 @@ This study uses publicly available spatial transcriptomics datasets:
 - **Human dorsolateral prefrontal cortex (DLPFC)** from the `spatialLIBD` resource
 - **Human Breast Cancer Block A** from Zenodo / 10x-compatible Visium resources
 
-The manuscript Data Availability section should point readers to the exact public URLs and DOI.
 
-## What to include in the GitHub release
-
-For the public repository, include:
-
-- the code in this repository
-- a release tag corresponding to the manuscript version
-- the final `README.md`
-- a populated `Code availability` statement in the manuscript with the GitHub URL
-- example commands or a small test dataset if redistribution is allowed
-
-You do **not** need to upload large intermediate `.h5ad` files or full raw datasets to GitHub. Instead:
-- provide acquisition links in the README
-- provide commands to regenerate results
-- archive processed outputs separately on Zenodo if needed
-
-## Recommended manuscript reproducibility statement
-
-> All code for preprocessing, degradation simulation, radiomics extraction, multimodal fusion, clustering, evaluation, and figure generation is available at [GitHub URL]. A frozen release corresponding to the manuscript version is archived at [Zenodo DOI if created].
-
-## Notes for Genome Biology submission
-
-To maximize reproducibility for peer review:
-
-- keep the package installable with `pip install -e .`
-- tag the commit used for submission
-- consider creating a GitHub release and linking it to Zenodo for a versioned DOI
-- replace placeholder URLs in `pyproject.toml` and this README with the final public repository URL
-- keep any environment-specific paths out of committed scripts where possible
-
-## Current packaging approach
-
-This repository is already **pip-installable**. The current package exposes the manuscript scripts as console entry points using lightweight wrappers. This keeps your original analysis scripts intact while making the codebase easier to install and run.
-
-A later refactor could move core logic into importable modules, but that is not required for manuscript submission.
 
 ## Citation
 
