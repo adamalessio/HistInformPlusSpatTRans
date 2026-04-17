@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hipstr"
+version = "0.1.0"
+description = "Histology-Informed Spatial Transcriptomic Representations (HIPSTR): packaging and reproducibility utilities."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "Ian Loveless"}
+]
+dependencies = [
+  "anndata",
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "matplotlib",
+  "scanpy",
+  "torch",
+  "pillow",
+  "tifffile"
+]
+
+[project.urls]
+Homepage = "https://github.com/USERNAME/HIPSTR"
+Repository = "https://github.com/USERNAME/HIPSTR"
+
+[project.scripts]
+hipstr-fuse = "hipstr.cli.fuse:main"
+hipstr-evaluate = "hipstr.cli.evaluate:main"
+hipstr-plot-breast = "hipstr.cli.plot_breast:main"
+hipstr-plot-overlays = "hipstr.cli.plot_overlays:main"
+hipstr-run-spagcn = "hipstr.cli.run_spagcn:main"
+hipstr-concat-spagcn = "hipstr.cli.concat_spagcn:main"
+hipstr-radiomics-legacy = "hipstr.cli.radiomics_legacy:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hipstr = ["scripts/*.py"]

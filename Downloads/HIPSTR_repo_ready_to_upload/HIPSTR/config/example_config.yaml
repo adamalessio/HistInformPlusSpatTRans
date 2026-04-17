@@ -1,0 +1,18 @@
+# Example configuration for a HIPSTR run
+dataset:
+  h5_path: /path/to/filtered_feature_bc_matrix.h5
+  spatial_dir: /path/to/spatial
+  radiomics_csv: /path/to/radiomics.csv
+
+degradation:
+  ambient: [0.0, 0.2, 0.4, 0.6, 0.8]
+  dropout: [0.0, 0.2, 0.4, 0.6, 0.8]
+  seeds: [0, 1, 2]
+
+clustering:
+  n_pcs: 64
+  k_neighbors: 30
+  target_clusters:
+    dlpfc: 7
+    breast_coarse: 4
+    breast_fine: 20

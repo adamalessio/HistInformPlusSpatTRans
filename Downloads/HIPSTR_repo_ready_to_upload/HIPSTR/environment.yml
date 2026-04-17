@@ -1,0 +1,23 @@
+name: hipstr
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - scanpy
+  - pytorch
+  - pillow
+  - tifffile
+  - simpleitk
+  - pip:
+      - pyradiomics
+      - SpaGCN
+      - anndata
+      - squidpy

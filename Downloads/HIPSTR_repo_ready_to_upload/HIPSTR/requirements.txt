@@ -1,0 +1,14 @@
+anndata
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+scanpy
+torch
+pillow
+tifffile
+pyradiomics
+SimpleITK
+SpaGCN
+squidpy
