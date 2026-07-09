@@ -44,8 +44,8 @@ HIPSTR/
 ### Option 1: pip install from a local clone
 
 ```bash
-git clone https://github.com/USERNAME/HIPSTR.git
-cd HIPSTR
+git clone https://github.com/adamalessio/HistInformPlusSpatTRans.git
+cd HistInformPlusSpatTRans/HIPSTR
 pip install -e .
 ```
 
