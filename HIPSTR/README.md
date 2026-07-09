@@ -4,7 +4,7 @@
 
 This repository contains the analysis code used for the manuscript:
 
-> **Multimodal representations mitigate failure modes in spatial transcriptomic clustering under degradation**
+> **Evaluating Multimodal Clustering Robustness to Spatial Transcriptomics Data Degradation**
 
 The repository is organized for reproducibility and journal submission. It includes code for:
 
